@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talaba-FC Academy | Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap brand">
+      <img src="images/talaba-logo.jpg" alt="Talaba-FC Academy crest">
+      <h1>Talaba-FC Academy</h1>
+      <p>Grassroots football for players aged 8 to 18</p>
+    </div>
+    <nav id="main-nav">
+      <ul class="wrap">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a class="current" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section id="contact-intro">
+        <h2>Contact Us</h2>
+        <p class="lead">Tell us the player's age and the group you want. We use this form to place them on the right session and to send the trial details.</p>
+      </section>
+
+      <div class="col-left">
+        <section id="enquiry" class="panel">
+          <h3>Join or book a trial</h3>
+          <form id="trial-form" action="#" method="post" onsubmit="return validateForm();">
+            <label for="fullname">Parent or player name</label>
+            <input type="text" id="fullname" name="fullname">
+            <p class="error" id="err-fullname"></p>
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email">
+            <p class="error" id="err-email"></p>
+
+            <label for="age">Player age</label>
+            <input type="number" id="age" name="age" min="8" max="18" oninput="suggestGroup()">
+            <p class="error" id="err-age"></p>
+            <p id="age-hint">Enter an age between 8 and 18.</p>
+
+            <label for="pathway">Training group</label>
+            <select id="pathway" name="pathway">
+              <option value="">Please select</option>
+              <option value="foundations">Foundations (U8–U10)</option>
+              <option value="development">Development (U11–U13)</option>
+              <option value="performance">Performance (U14–U16)</option>
+              <option value="pathway-group">Pathway (U17–U18)</option>
+            </select>
+            <p class="error" id="err-pathway"></p>
+
+            <p>Preferred session</p>
+            <div class="radio-row">
+              <input type="radio" id="session-weekday" name="session" value="weekday">
+              <label for="session-weekday">Weekday evening</label>
+              <input type="radio" id="session-saturday" name="session" value="saturday">
+              <label for="session-saturday">Saturday morning</label>
+            </div>
+            <p class="error" id="err-session"></p>
+
+            <label for="message">About the player</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <p class="error" id="err-message"></p>
+
+            <input type="submit" value="Send enquiry">
+            <p id="form-status"></p>
+          </form>
+        </section>
+      </div>
+
+      <div class="col-right">
+        <section id="other-ways" class="panel">
+          <h3>Other ways to reach us</h3>
+          <p>Academy office, Riverside Sports Ground<br>42 Greenfield Lane<br>Birmingham B12 8QT</p>
+          <p>Email: join@talabafc.academy<br>Telephone: 0121 555 0142<br>Office hours: Monday to Friday, 09:00–16:00</p>
+          <p>Safeguarding lead: Amina Rahman. If you need to talk about a welfare concern, ask for Amina at the clubhouse or email welfare@talabafc.academy.</p>
+          <img src="images/players-together.jpg" alt="Talaba-FC players after a session">
+        </section>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-cols">
+      <p><strong>Talaba-FC Academy</strong></p>
+      <p>Riverside Sports Ground, 42 Greenfield Lane, Birmingham B12 8QT</p>
+      <p>Email: join@talabafc.academy · Tel: 0121 555 0142</p>
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="about.html">About Us</a> ·
+        <a href="training.html">Training</a> ·
+        <a href="contact.html">Contact Us</a>
+      </p>
+      <p class="small">© 2026 Talaba-FC Academy. Grassroots football, taught properly.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talaba-FC Academy | Training</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap brand">
+      <img src="images/talaba-logo.jpg" alt="Talaba-FC Academy crest">
+      <h1>Talaba-FC Academy</h1>
+      <p>Grassroots football for players aged 8 to 18</p>
+    </div>
+    <nav id="main-nav">
+      <ul class="wrap">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="current" href="training.html">Training</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section id="how-we-train">
+        <h2>How we train</h2>
+        <p class="lead">Every session follows the same shape: a warm-up with the ball, a technical block, a game-related practice, then a small-sided match. Coaches stop the play to coach, not to shout.</p>
+        <div class="col-left">
+          <img src="images/goalkeeper-drill.jpg" alt="Goalkeeper coaching during a Talaba-FC session">
+        </div>
+        <div class="col-right panel">
+          <h3>What to bring</h3>
+          <p>Boots (moulded studs are fine on our grass), shin pads, a water bottle and the gold training kit. In winter we add a green base layer. Jewellery stays off. Parents wait in the clubhouse, not on the touchline, so players can focus.</p>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+
+      <section id="timetable">
+        <h2>Weekly timetable</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Pitch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Foundations (U8–U10)</td>
+              <td>Saturday</td>
+              <td>09:00–10:15</td>
+              <td>Mini-pitch</td>
+            </tr>
+            <tr>
+              <td>Development (U11–U13)</td>
+              <td>Tuesday</td>
+              <td>18:00–19:15</td>
+              <td>Main pitch, far half</td>
+            </tr>
+            <tr>
+              <td>Development (U11–U13)</td>
+              <td>Saturday</td>
+              <td>10:30–12:00</td>
+              <td>Main pitch</td>
+            </tr>
+            <tr>
+              <td>Performance (U14–U16)</td>
+              <td>Thursday</td>
+              <td>18:00–19:30</td>
+              <td>Main pitch</td>
+            </tr>
+            <tr>
+              <td>Performance (U14–U16)</td>
+              <td>Saturday</td>
+              <td>12:15–13:45</td>
+              <td>Main pitch</td>
+            </tr>
+            <tr>
+              <td>Pathway (U17–U18)</td>
+              <td>Thursday</td>
+              <td>19:30–21:00</td>
+              <td>Main pitch</td>
+            </tr>
+            <tr>
+              <td>Goalkeepers (all ages)</td>
+              <td>Thursday</td>
+              <td>17:30–18:00</td>
+              <td>Clubhouse end</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="choose-session">
+        <h2>Choose a session to enquire about</h2>
+        <p>Click the slot that fits your week. We will copy that choice into the note you send on the Contact page.</p>
+        <button type="button" class="session-slot" onclick="pickSession(this, 'Foundations, Saturday 09:00')">Foundations — Saturday 09:00–10:15</button>
+        <button type="button" class="session-slot" onclick="pickSession(this, 'Development, Tuesday 18:00')">Development — Tuesday 18:00–19:15</button>
+        <button type="button" class="session-slot" onclick="pickSession(this, 'Performance, Thursday 18:00')">Performance — Thursday 18:00–19:30</button>
+        <button type="button" class="session-slot" onclick="pickSession(this, 'Pathway, Thursday 19:30')">Pathway — Thursday 19:30–21:00</button>
+        <p id="session-choice">No session selected yet.</p>
+        <a class="btn" href="contact.html">Continue to Contact Us</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-cols">
+      <p><strong>Talaba-FC Academy</strong></p>
+      <p>Riverside Sports Ground, 42 Greenfield Lane, Birmingham B12 8QT</p>
+      <p>Email: join@talabafc.academy · Tel: 0121 555 0142</p>
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="about.html">About Us</a> ·
+        <a href="training.html">Training</a> ·
+        <a href="contact.html">Contact Us</a>
+      </p>
+      <p class="small">© 2026 Talaba-FC Academy. Grassroots football, taught properly.</p>
+    </div>
+  </footer>
+</body>
+</html>

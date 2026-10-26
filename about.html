@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talaba-FC Academy | About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="wrap brand">
+      <img src="images/talaba-logo.jpg" alt="Talaba-FC Academy crest">
+      <h1>Talaba-FC Academy</h1>
+      <p>Grassroots football for players aged 8 to 18</p>
+    </div>
+    <nav id="main-nav">
+      <ul class="wrap">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="about.html">About Us</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section id="story">
+        <h2>About Talaba-FC</h2>
+        <p class="lead">The academy opened in 2019 after a group of local coaches grew tired of long waiting lists at bigger clubs. We wanted a place where a shy eight-year-old and a driven seventeen-year-old could both improve in the same colours.</p>
+        <p>Today we train around 140 players. Fees stay in the game: floodlights, first-aid cover, DBS-checked staff and a kit that players can be proud to wear at school on a Friday.</p>
+      </section>
+
+      <section id="location">
+        <h2>Location</h2>
+        <div class="col-left">
+          <img src="images/facility-pitch.jpg" alt="Talaba-FC home pitch and clubhouse at Riverside Sports Ground">
+        </div>
+        <div class="col-right panel">
+          <h3>Riverside Sports Ground</h3>
+          <p>42 Greenfield Lane<br>Birmingham<br>B12 8QT</p>
+          <p>The ground sits beside the River Rea, a short walk from Balsall Heath. Bus routes 35 and 50 stop on Highgate Road. There is free parking for 40 cars beside the clubhouse.</p>
+          <p>Training evenings: gates open 17:30. Saturday mornings: gates open 08:45.</p>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+
+      <section id="prices">
+        <h2>Prices</h2>
+        <p>Fees are paid monthly by bank transfer. The first month includes a two-session trial. If the player decides not to stay, we refund that month in full.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Ages</th>
+              <th>Sessions each week</th>
+              <th>Monthly fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Foundations</td>
+              <td>8–10</td>
+              <td>1</td>
+              <td>£36</td>
+            </tr>
+            <tr>
+              <td>Development</td>
+              <td>11–13</td>
+              <td>2</td>
+              <td>£44</td>
+            </tr>
+            <tr>
+              <td>Performance</td>
+              <td>14–16</td>
+              <td>2</td>
+              <td>£52</td>
+            </tr>
+            <tr>
+              <td>Pathway</td>
+              <td>17–18</td>
+              <td>2 plus gym access</td>
+              <td>£58</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Match-day kit pack (home shirt, shorts, socks): £55 once per season. Training kit: £28. Goalkeeper gloves are not included.</p>
+      </section>
+
+      <section id="kits">
+        <h2>Kits</h2>
+        <p>Hover over a kit to read when it is worn and what it costs. Click to keep the details on screen while you compare.</p>
+        <div id="kit-info">Hover over a kit to see sizes, price and when it is worn. Click a kit to keep that information on screen.</div>
+        <div class="card-row">
+          <article class="card kit-card" id="kit-home"
+            onmouseover="highlightKit('Home kit', '£55 for the full pack', 'Forest green with gold trim. Worn for all home matches from U11 upwards. Sizes YS to Adult L.')"
+            onmouseout="resetKit()"
+            onclick="lockKit('Home kit', '£55 for the full pack', 'Forest green with gold trim. Worn for all home matches from U11 upwards. Sizes YS to Adult L.')">
+            <img src="images/kit-home.jpg" alt="Talaba-FC forest green home shirt, shorts and socks">
+            <h3>Home kit</h3>
+            <p>Match days at Riverside.</p>
+          </article>
+          <article class="card kit-card" id="kit-away"
+            onmouseover="highlightKit('Away kit', '£55 if bought as a pack, or £32 for the shirt alone', 'White with green and gold trim. Worn for away fixtures and cup ties. Same size range as the home kit.')"
+            onmouseout="resetKit()"
+            onclick="lockKit('Away kit', '£55 if bought as a pack, or £32 for the shirt alone', 'White with green and gold trim. Worn for away fixtures and cup ties. Same size range as the home kit.')">
+            <img src="images/kit-away.jpg" alt="Talaba-FC white away shirt, shorts and socks">
+            <h3>Away kit</h3>
+            <p>Travel and cup matches.</p>
+          </article>
+          <article class="card kit-card" id="kit-training"
+            onmouseover="highlightKit('Training kit', '£28', 'Gold shirt with green side panels. Worn at every midweek session. Players keep this kit for the full season.')"
+            onmouseout="resetKit()"
+            onclick="lockKit('Training kit', '£28', 'Gold shirt with green side panels. Worn at every midweek session. Players keep this kit for the full season.')">
+            <img src="images/kit-training.jpg" alt="Talaba-FC gold and green training kit">
+            <h3>Training kit</h3>
+            <p>Tuesday, Thursday and Saturday.</p>
+          </article>
+        </div>
+        <div class="clearfix"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-cols">
+      <p><strong>Talaba-FC Academy</strong></p>
+      <p>Riverside Sports Ground, 42 Greenfield Lane, Birmingham B12 8QT</p>
+      <p>Email: join@talabafc.academy · Tel: 0121 555 0142</p>
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="about.html">About Us</a> ·
+        <a href="training.html">Training</a> ·
+        <a href="contact.html">Contact Us</a>
+      </p>
+      <p class="small">© 2026 Talaba-FC Academy. Grassroots football, taught properly.</p>
+    </div>
+  </footer>
+</body>
+</html>

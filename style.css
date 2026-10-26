@@ -1,0 +1,370 @@
+/* Talaba-FC Academy — one stylesheet used on every page */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #12201a;
+  background-color: #f7f3e8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Grouping selector: shared chrome for header and footer */
+header,
+footer {
+  background-color: #0d4d32;
+  color: #f7f3e8;
+  width: 100%;
+}
+
+.wrap {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* Header */
+.site-header {
+  padding: 12px 0 0 0;
+  height: auto;
+}
+
+.brand {
+  display: block;
+  overflow: hidden;
+  padding: 8px 0 16px 0;
+}
+
+.brand img {
+  float: left;
+  width: 72px;
+  height: 72px;
+  margin: 0 16px 0 0;
+  border-radius: 50%;
+  border: 3px solid #c9a227;
+}
+
+.brand h1 {
+  margin: 8px 0 0 0;
+  font-size: 28px;
+  color: #f7f3e8;
+}
+
+.brand p {
+  margin: 0;
+  color: #c9a227;
+  font-size: 14px;
+}
+
+/* Horizontal navigation built from a list */
+#main-nav {
+  background-color: #083824;
+  clear: both;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main-nav li {
+  float: left;
+  width: auto;
+}
+
+/* Descendant selector: links inside the nav list */
+nav ul li a {
+  display: block;
+  color: #f7f3e8;
+  text-decoration: none;
+  padding: 14px 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+
+nav ul li a:hover,
+nav ul li a.current {
+  background-color: #c9a227;
+  color: #12201a;
+}
+
+main {
+  min-height: 420px;
+  padding: 28px 0 48px 0;
+}
+
+h2,
+h3 {
+  color: #0d4d32;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  margin: 0 0 28px 0;
+  overflow: hidden;
+  height: 340px;
+}
+
+.hero img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.hero-caption {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background-color: rgba(13, 77, 50, 0.88);
+  color: #f7f3e8;
+  padding: 16px 20px;
+  width: 70%;
+  max-width: 520px;
+}
+
+.hero-caption h2 {
+  color: #c9a227;
+  margin: 0 0 8px 0;
+}
+
+.hero-caption p {
+  margin: 0;
+}
+
+/* Buttons */
+.btn,
+button,
+input[type="submit"] {
+  display: inline-block;
+  background-color: #c9a227;
+  color: #12201a;
+  border: none;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+  background-color: #e0bc3d;
+}
+
+/* Feature cards use float layout */
+.card-row {
+  overflow: hidden;
+  margin: 8px 0 24px 0;
+}
+
+.card {
+  float: left;
+  width: 31%;
+  margin: 0 2% 18px 0;
+  background-color: #ffffff;
+  padding: 14px;
+  min-height: 280px;
+  border: 1px solid #d5cba8;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.kit-card {
+  cursor: pointer;
+  min-height: 320px;
+}
+
+.kit-card.highlight {
+  border: 3px solid #c9a227;
+  background-color: #fffdf4;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#kit-info {
+  background-color: #0d4d32;
+  color: #f7f3e8;
+  padding: 14px 16px;
+  margin: 0 0 24px 0;
+  min-height: 52px;
+}
+
+#kit-info strong {
+  color: #c9a227;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin: 12px 0 24px 0;
+}
+
+th,
+td {
+  border: 1px solid #cfc6a3;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0d4d32;
+  color: #f7f3e8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #efe8d2;
+}
+
+/* Two column layout with float */
+.col-left {
+  float: left;
+  width: 56%;
+  margin: 0 4% 20px 0;
+}
+
+.col-right {
+  float: left;
+  width: 40%;
+  margin: 0 0 20px 0;
+}
+
+.panel {
+  background-color: #ffffff;
+  padding: 16px;
+  border: 1px solid #d5cba8;
+}
+
+.session-slot {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+  border: 2px solid #0d4d32;
+  margin: 0 0 10px 0;
+  padding: 12px;
+}
+
+.session-slot.picked {
+  background-color: #0d4d32;
+  color: #f7f3e8;
+}
+
+#trial-banner {
+  background-color: #efe8d2;
+  border-left: 6px solid #c9a227;
+  padding: 12px 16px;
+  margin: 16px 0;
+  min-height: 48px;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin: 12px 0 4px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #8a8164;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.radio-row label {
+  display: inline;
+  font-weight: normal;
+  margin-right: 16px;
+}
+
+.error {
+  color: #8b1e1e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+}
+
+#form-status {
+  margin-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-status.ok {
+  color: #0d4d32;
+}
+
+/* Planning page */
+.audience-note {
+  background-color: #ffffff;
+  padding: 18px;
+  border: 1px solid #d5cba8;
+  max-width: 720px;
+}
+
+.wireframe-grid img {
+  width: 48%;
+  float: left;
+  margin: 0 2% 18px 0;
+  border: 1px solid #cfc6a3;
+}
+
+footer {
+  padding: 20px 0 28px 0;
+  clear: both;
+}
+
+footer a {
+  color: #c9a227;
+}
+
+.footer-cols p {
+  margin: 6px 0;
+}
+
+.small {
+  font-size: 13px;
+  color: #d9d0b0;
+}
